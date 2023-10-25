@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Startseite Melin</title>
+    <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
+    <link rel="stylesheet" href="Melin.css">
+</head>
+
+<body>
+
+    <h1>Startseite Melin</h1>
+    <h2> <img src="Melin-Visitenkarte.jpg" alt="" />
+    </h2>
+    <img src="under-construction.jpg" alt="" />
+    
+    <!-- Diashow ANFANG -->
+    <img class="mySlides" src="Vogel 1.png" style="width:79%" alt="" />
+    <img class="mySlides" src="Vogel 2.png" style="width:70%" alt="" />
+    <img class="mySlides" src="Vogel 3.png" style="width:70%" alt="" />
+    <img class="mySlides" src="Vogel 4.png" style="width:73%" alt="" />
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "inline";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+    <!-- Diashow ENDE -->
+    <br />
+    <p>
+        <hr>
+        <b>
+            Kontaktdaten:<br />
+        </b>
+
+        Hardtxxx nn<br />
+        42399 Wuppertal<br />
+        Tel.:0nn/9nnnn<br />
+        Email: info@xxxa.de<br />
+        <hr>
+    </p>
+</body>
